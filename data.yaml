@@ -1,13 +1,29 @@
-train: ../train/images
-val: ../valid/images
-test: ../test/images
+train: 
+  - ../train/images1
+  - ../train/images2
+  - ../train/images3
+  - ../train/images4
+val: 
+  - ../valid/images1
+  - ../valid/images2
+  - ../valid/images3
+  - ../valid/images4
+test: 
+  - ../test/images1
+  - ../test/images2
+  - ../test/images3
+  - ../test/images4
 
-nc: 1
-names: ['bottle']
+nc: 9
+names: ['bottle', 'mobile-phone', 'device', 'face', 'live', 'mask', 'photo', 'Chair', 'NotChair']
 
 roboflow:
   workspace: yolo-learning-kiprr
   project: bottle-detector-scy7l
   version: 3
   license: CC BY 4.0
-  url: https://universe.roboflow.com/yolo-learning-kiprr/bottle-detector-scy7l/dataset/3
+  urls: 
+    - https://universe.roboflow.com/yolo-learning-kiprr/bottle-detector-scy7l/dataset/3
+    - https://universe.roboflow.com/yolovehicledetection/phone-detection-nkzix/dataset/1
+    - https://universe.roboflow.com/hassan-x1nnw/face-detection-bzhaq/dataset/2#
+    - https://universe.roboflow.com/chairs-f3tal/sdgp-chair/dataset/1
