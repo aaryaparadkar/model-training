@@ -1,6 +1,7 @@
 path: D:\TEC\Sem-6\Mini Project
 train: D:\TEC\Sem-6\Mini Project\train
 val: D:\TEC\Sem-6\Mini Project\valid
+test: D:\TEC\Sem-6\Mini Project\test
 
 names:
   0: bottle
